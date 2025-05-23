@@ -1,21 +1,30 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: impact, monospace;
+  font-size: 30px;
   margin: 0;
   padding: 0;
-  background-color: #e4c78a;
+  background-color: #c3d6a3;
+
+  /* background-image: linear-gradient(
+    to bottom, transparent, #c3d6a3
+  ), url("./assets/fire.avif");
+  background-repeat: no-repeat; */
+
+
 }
 
 .container {
   text-align: center;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
-.hero img {
-  width: 200px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
+ .hero img {
+  width: 100%;
+  height: 200px;
+ /* display: block; nevermind this code is usless*/ 
+  overflow: hidden; 
+  margin: auto;
+} 
 
 .grid {
   display: flex;
@@ -23,11 +32,12 @@ body {
   flex-wrap: wrap;
   gap: 20px;
   margin: 20px 0;
+  padding: 0 20px;
 }
 
 .card, .box, .half, .quarter, .full, .nav, .main {
-  background-color: white;
-  border: 1px solid #ccc;
+  background-color: rgb(12, 94, 12);
+  border: 7px solid #bb9762;
   padding: 20px;
   text-align: center;
   flex: 1;
@@ -35,8 +45,9 @@ body {
 }
 
 .card {
+  /* font-family: arial, serif;     nevermind I put this in the wrong spot it goes in body*/
   text-decoration: none;
-  color: black;
+  color: rgb(211, 240, 197);
   width: 200px;
   transition: background-color 0.3s;
 }
@@ -56,8 +67,9 @@ body {
 
 .english-layout {
   display: flex;
-  gap: 20px;
-  padding: 20px;
+  /* gap: 200px;   USLESSS*/
+  padding: 10px;
+ margin-bottom: 20px;
 }
 
 .nav {
@@ -66,4 +78,14 @@ body {
 
 .main {
   flex: 3;
+}
+
+.leftIndent {
+  padding-left: 100px;
+}
+
+.title {
+  position:absolute;
+  top: 0;
+  margin: auto 0;
 }
