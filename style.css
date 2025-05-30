@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #c3d6a3;
-
+ 
   /* background-image: linear-gradient(
     to bottom, transparent, #c3d6a3
   ), url("./assets/fire.avif");
@@ -81,11 +81,18 @@ body {
 }
 
 .leftIndent {
-  padding-left: 1000px;
+  padding-left: 50px;
 }
 
 .title {
   position:absolute;
   top: 0;
   margin: auto 0;
+  padding-left: 50px;
+  padding-top: 50px;
+  color:aliceblue;
+}
+
+.imageCrop {
+  width:auto;
 }
